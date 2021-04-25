@@ -20,4 +20,12 @@
   
   
   <p align="center"><img width="500" alt="strassen" src="https://user-images.githubusercontent.com/80371590/116005034-46bf6c00-a640-11eb-9b17-fd14c1ba087e.png">
+ 
+ 
+  ### 시간복잡도)
+  
+  단순 알고리즘의 행렬 곱셉 같은 경우는 입력의 크기를 행과 열의 수를 n이라고 하면,
+  
+ <p align="center"><img width="500" alt="strassen" src="https://user-images.githubusercontent.com/80371590/116005407-b7b35380-a641-11eb-9459-bd1e9e00abb0.png">
+
                                                                                             
