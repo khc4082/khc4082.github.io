@@ -30,7 +30,8 @@
   
  
  `Strassen Algorithm`의 경우는, 
- 
+
+
  <p align="center"><img width="500" alt="strassen" src="https://user-images.githubusercontent.com/80371590/116005489-209acb80-a642-11eb-8d3f-0b79e30936e7.png">
 
   
