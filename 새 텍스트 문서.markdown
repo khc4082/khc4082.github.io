@@ -45,7 +45,6 @@ public class Strassen {
     {
         int n = A.length;
         int[][] S = new int[n][n];
-
         if (n == 1)
             S[0][0] = A[0][0] * B[0][0];
         else
@@ -54,13 +53,12 @@ public class Strassen {
             int[][] A12 = new int[n/2][n/2];
             int[][] A21 = new int[n/2][n/2];
             int[][] A22 = new int[n/2][n/2];
-
+            
             int[][] B11 = new int[n/2][n/2];
             int[][] B12 = new int[n/2][n/2];
             int[][] B21 = new int[n/2][n/2];
             int[][] B22 = new int[n/2][n/2];
-
-
+        
             split(A, A11, 0 , 0);
             split(A, A12, 0 , n/2);
             split(A, A21, n/2, 0);
@@ -166,6 +164,7 @@ public class Strassen {
 
     }
 }```
+
 
 
                                                                                             
