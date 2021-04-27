@@ -193,4 +193,41 @@ public class Strassen {
 
  = > 32 28
      83 72
+     
+### 소스 코드
+- main 함수
+```java
+public static void main (String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        Strassen s = new Strassen();
+
+        System.out.println("n을 입력하세요. :");
+        int N = scan.nextInt();
+
+        System.out.println("행렬 1의 n을 입력하세요.\n");
+        int[][] A = new int[N][N];
+        for (int i = 0; i < N; i++)
+            for (int j = 0; j < N; j++)
+                A[i][j] = scan.nextInt();
+
+        System.out.println("행렬 2의 n을 입력하세요.\n");
+        int[][] B = new int[N][N];
+        for (int i = 0; i < N; i++)
+            for (int j = 0; j < N; j++)
+                B[i][j] = scan.nextInt();
+
+        int[][] C = s.multiply(A, B);
+
+        System.out.println("\n행렬 A와 B의 곱 : ");
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = 0; j < N; j++)
+                System.out.print(C[i][j] +" ");
+            System.out.println();
+        }
+
+    }
+}
+```
                                                                                             
