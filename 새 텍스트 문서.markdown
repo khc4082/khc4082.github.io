@@ -273,4 +273,25 @@ public static void main (String[] args)
     }
 }
 ```
+
+### 실행시간 측정)
+
+```java
+long startTime = 0;
+        long endTime = 0;
+        long diffTime = 0;
+        
+        startTime = System.currentTimeMillis();
+        System.out.println("\n행렬 A와 B의 곱 : ");
+
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = 0; j < N; j++)
+                System.out.print(C[i][j] +" ");
+            System.out.println();
+        }
+        endTime   = System.currentTimeMillis();
+        diffTime  = endTime - startTime;
+        System.out.println("실행 시간 = "+ diffTime + "ms");
+```
                                                                                             
