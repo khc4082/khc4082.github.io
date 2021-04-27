@@ -169,5 +169,11 @@ public class Strassen {
 ```
 
 
+### 코드 설명
 
+: 행렬의 수를 정하는 n과 행렬 A와 B에 들어갈 숫자를 각각 입력하면 덧셈과 뺄셈을 통해 최종적인 행렬 A와 B의 곱을 구하게 된다.
+  - 입력 : 행렬의 수를 정하는 n, 행렬 A와 B에 각각 들어갈 숫자
+  - 출력 : 행렬 A와 B의 곱
+
+<img width="500" alt="strassen" src="https://user-images.githubusercontent.com/80371590/116239804-0bd34a80-a79e-11eb-8d20-4ed20785c230.png">
                                                                                             
