@@ -39,7 +39,8 @@
 
   ### 코드)
   
-```import java.util.Scanner;
+```java
+import java.util.Scanner;
 
 public class Strassen {
     public int[][] multiply(int[][] A, int[][] B)
