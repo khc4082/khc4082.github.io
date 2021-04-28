@@ -46,17 +46,17 @@ public class Strassen {
     public int[][] multiply(int[][] A, int[][] B)
     {
         int n = A.length;
-        int[][] S = new int[n][n];
+        int[][] S = new int[n][n]; // 이중배열
         if (n == 1)
             S[0][0] = A[0][0] * B[0][0];
         else
         {
-            int[][] A11 = new int[n/2][n/2];
+            int[][] A11 = new int[n/2][n/2];    //  행렬 1의 매트릭스
             int[][] A12 = new int[n/2][n/2];
             int[][] A21 = new int[n/2][n/2];
             int[][] A22 = new int[n/2][n/2];
             
-            int[][] B11 = new int[n/2][n/2];
+            int[][] B11 = new int[n/2][n/2];   //  행렬 2의 매트릭스
             int[][] B12 = new int[n/2][n/2];
             int[][] B21 = new int[n/2][n/2];
             int[][] B22 = new int[n/2][n/2];
@@ -88,7 +88,7 @@ public class Strassen {
             int [][] C22 = add(sub(add(M1, M3), M2), M6);       //  C22 = M1 - M2 + M3 + M6
 
 
-            join(C11, S, 0 , 0);
+            join(C11, S, 0 , 0);   // 결과 배열 도출
             join(C12, S, 0 , n/2);
             join(C21, S, n/2, 0);
             join(C22, S, n/2, n/2);
